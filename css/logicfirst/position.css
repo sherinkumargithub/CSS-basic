@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* RELATIVE POSITONING */
+/* .gbox {
+  width: 250px;
+  height: 250px;
+  background-color: green;
+  
+}
+.rbox {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+
+  position: relative;
+  left: 70px;
+  bottom: 170px;
+  
+} */
+
+/* ABSOLUTE POSITIONING */
+
+.gbox {
+  width: 250px;
+  height: 250px;
+  background-color: green;
+
+  position: relative;
+}
+.rbox {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+
+  position: absolute; /* fixed; */
+  top: 80px;
+  left: 70px;
+}

@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Lobster&family=Outfit:wght@200&family=Salsa&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* font-family: "Lobster", sans-serif; */
+}
+section {
+  padding: 40px 15%;
+}
+.contact {
+  background-color: rgb(92, 42, 10);
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+
+  display: grid;
+  grid-template-columns: 70% 30%;
+  align-items: center;
+  grid-gap: 8rem;
+}
+.imag img {
+  max-width: 100%;
+  width: 400px;
+  height: auto;
+  border-radius: 10px;
+}
+.contact-form h1 {
+  font-size: 4rem;
+  color: white;
+  margin-bottom: 1.3rem;
+
+  font-family: "Lobster", sans-serif;
+}
+span {
+  color: rgb(223, 171, 103);
+}
+.contact-form p {
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+  line-height: 1.6rem;
+  color: beige;
+  margin-bottom: 3rem;
+  font-family: "Outfit", sans-serif;
+}
+.contact-form form {
+  position: relative;
+}
+.contact-form form input,
+form textarea,
+button {
+  width: 100%;
+  padding: 1.1rem;
+  border: none;
+  outline: none;
+  background-color: /*rgb(149, 109, 43); */ rgb(219, 161, 85);
+  color: #fff;
+  font-size: 1.1rem;
+  margin-bottom: 0.6rem;
+  border-radius: 9px;
+}
+.contact-form form .submit {
+  display: inline-block;
+  background-color: rgb(182, 136, 61);
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border: 2px solid transparent;
+  border-radius: 10px;
+
+  width: 220px;
+  transition: ease 0.2s;
+  cursor: pointer;
+}
+/* button .submit {
+  display: flex;
+  justify-content: center;
+} */
+.contact-form form .submit:hover {
+  border: 2px solid rgb(182, 136, 61);
+  transform: scale(1.1);
+  background-color: rgb(92, 42, 10);
+}

@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+/* REST */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* UTILITY CLASS */
+
+.nowrap {
+  white-space: nowrap;
+}
+/* 
+.fit {
+  font-style: italic;
+  padding-left: 100px;
+} */
+/* GENERAL STYLES */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font: 1.5rem "Nunito", sans-serif;
+  min-height: 100vh;
+  background-color: rgb(212, 69, 69);
+  background-image: radial-gradient(rgb(124, 119, 119), rgb(212, 69, 69));
+  display: flex;
+  flex-direction: column;
+}
+
+:where(header, footer) {
+  position: sticky;
+  background-color: rgb(165, 45, 45);
+  color: black;
+  text-align: center;
+}
+header {
+  top: 0;
+}
+nav {
+  background-color: rgb(230, 230, 205); /* rgb(133, 130, 130); */
+  padding: 0.5rem;
+  border-bottom: 2px solid #000;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* nav a,
+nav a:visited {
+  color: #000;
+} or*/
+nav a:any-link {
+  color: black;
+}
+nav :is(a:hover, a:focus) {
+  color: rgb(71, 63, 63);
+}
+nav a:active {
+  color: maroon;
+}
+img {
+  width: 300px;
+  height: 300px;
+}
+main {
+  /* display: grid;
+  grid-template-rows: 1fr 1fr 1fr; */
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem;
+
+  /* height: 100vh; */
+
+  /* margin-top: 3rem;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 2rem; */
+}
+
+footer {
+  bottom: 0;
+}
+
+/* card profile */
+.card {
+  scroll-margin-top: 8rem;
+  width: min(100%, 350px);
+  background-color: rgb(214, 214, 208);
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card figure {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.card img {
+  border: 5px doubled #333;
+  border-radius: 50%;
+}
+.card figcaption {
+  font-weight: bolder;
+  font-size: 2rem;
+  margin: 1rem;
+  text-align: center;
+}
+/* psudo class */
+.card:target {
+  border: 6px solid maroon;
+}
+.card img:not([alt]) {
+  border: 5px double black;
+}
+.card:nth-child(even) {
+  background-color: rgb(195, 198, 204);
+}
+/* pseudo elements */
+.card figcaption::after {
+  content: "  \00BB";
+  display: block;
+}
+/* SMALL */ /*
+@media screen and (min-width: 576px) {
+  main {
+    justify-content: center;
+    flex-flow: nowrap;
+    padding: 1rem;
+  }
+  .card {
+    width: min(100%, 400px);
+  }
+  .card:last-child {
+    order: -2;
+  }
+}
+
+/* MEDIUM */ /*
+@media screen and (min-width: 770px) {
+  nav {
+    display: none;
+  }
+
+  .card {
+    width: min(100%, 325px);
+  }
+  .card figure {
+    flex-flow: column-reverse;
+  }
+  .card p {
+    margin-top: 1rem;
+  }
+} */

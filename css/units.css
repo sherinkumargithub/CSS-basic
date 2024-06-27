@@ -1,0 +1,16 @@
+header {
+  font-size: 2rem;
+  border: 3px dashed rgb(73, 12, 12);
+  width: 50%;
+  color: rgb(158, 126, 39);
+  padding: 0.5em;
+}
+main {
+  font-size: 2rem;
+  background-color: rgb(146, 116, 131);
+  min-width: 60vw;
+}
+p {
+  font-size: 2rem;
+  width: 50ch;
+}

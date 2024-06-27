@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+}
+img {
+  display: block;
+}
+.eg {
+  padding-left: 20px;
+  margin-top: 1rem;
+  border: 2px solid gray;
+}
+.eg img {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.mus {
+  position: absolute;
+  padding: 3rem;
+  margin-top: 300px;
+  margin-right: 100px;
+}

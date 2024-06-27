@@ -1,0 +1,31 @@
+body {
+  font-size: 1.5rem;
+}
+.col {
+  /* column-count: 5;
+  column-width: 80px; */
+  columns: 5 80px;
+  column-rule: 2px solid #333;
+  column-gap: 3rem;
+}
+.col p {
+  margin-top: 0;
+  /* margin-bottom: 0; */
+}
+h3 {
+  margin: 0;
+  background-color: cadetblue;
+  color: bisque;
+  padding: 2rem;
+  break-inside: avoid;
+}
+.col .qoute {
+  margin-top: 1rem; /* spficity is much important */
+  color: rgb(133, 11, 11);
+  text-align: center;
+  font-size: 2.5rem;
+  column-span: all;
+}
+.nowrap {
+  white-space: nowrap;
+}

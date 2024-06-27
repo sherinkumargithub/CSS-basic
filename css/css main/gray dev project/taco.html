@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- addition info -->
+    <meta name="author" content="sherin" />
+    <meta name="description" content="The official website for Taco shop" />
+    <link rel="stylesheet" href="/css main/gray dev project/taco.css" />
+    <title>Taco-shop</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__h1">Kapi Kada</h1>
+      <nav class="header__nav">
+        <ul class="header__ul">
+          <li>
+            <a href="#menu">Menu</a>
+          </li>
+          <li>
+            <a href="hours.html">Hours</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+          <li>
+            <a href="about.html"> About </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <h2 class="hero__h2">Welcome</h2>
+      <figure>
+        <img
+          src="/css main/gray dev project/coffe-946551_1280.jpg"
+          alt="coffe shop"
+          title="we love coffe"
+          width="1000"
+          height="667"
+        />
+        <figcaption class="offscreen">Coffe and drinks</figcaption>
+      </figure>
+    </section>
+
+    <main class="main">
+      <article class="main__article menu">
+        <h2 class="menu__h2">Our Menu</h2>
+        <table class="menu__container">
+          <caption class="offscreen">
+            Our Tacos
+          </caption>
+          <thead>
+            <tr>
+              <th class="menu__header">Tacos</th>
+              <th class="menu__header" scope="col">
+                <abbr title="Quantity">Qty</abbr>
+              </th>
+              <th class="menu__header" scope="col">Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th class="menu__items menu__cr" scope="row" rowspan="3">
+                Crunchy
+              </th>
+              <td class="menu__items">1</td>
+              <td class="menu__items">$1.50</td>
+            </tr>
+            <tr>
+              <td class="menu__items">2</td>
+              <td class="menu__items">$4.50</td>
+            </tr>
+            <tr>
+              <td class="menu__items">5</td>
+              <td class="menu__items">$7</td>
+            </tr>
+            <tr>
+              <th class="menu__items menu__sf" scope="row" rowspan="3">Soft</th>
+              <td class="menu__items">3</td>
+              <td class="menu__items">$6.50</td>
+            </tr>
+            <tr>
+              <td class="menu__items">3</td>
+              <td class="menu__items">$4.50</td>
+            </tr>
+            <tr>
+              <td class="menu__items">6</td>
+              <td class="menu__items">$3.50</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3" class="menu__items menu__cs">
+                Chips &amp; Salsa $2
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+
+        <p class="center">
+          <a href="#">Back To Top</a>
+        </p>
+      </article>
+    </main>
+    <footer class="footer">
+      <p>
+        <span class="nowrap">Copyright &copy;</span
+        ><span class="nowrap">Taco shop</span>
+      </p>
+    </footer>
+  </body>
+</html>

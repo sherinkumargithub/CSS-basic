@@ -1,0 +1,29 @@
+body {
+  font-size: 1.5rem;
+}
+.block {
+  width: 30vw;
+  height: 30vw;
+  padding: auto;
+  background-color: black;
+  color: blanchedalmond;
+}
+
+.mass {
+  float: left;
+  margin-right: 20px;
+}
+.lusu {
+  float: right;
+  margin-left: 20px;
+}
+/* .clear {
+  clear: both;
+} */
+section {
+  background-color: burlywood;
+  border: 3px solid gray;
+  padding: 1rem;
+  /* overflow: auto;  (old method)*/
+  display: flow-root; /* new method */
+}

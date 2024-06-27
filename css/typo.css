@@ -1,0 +1,26 @@
+/* Typology is the way that text is arranged
+and presented */
+body {
+  padding: 10%;
+  font-size: 1.3rem;
+}
+/* (while using the form)
+input,
+button {
+  font-size: inherit;
+}
+*/
+/*
+p {
+  text-decoration: underline;
+  text-transform: capitalize;
+  text-align: justify;
+  text-indent: 1.7em;
+} */
+/*
+p {
+  line-height: 1.7;
+  word-spacing: 1em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+*/

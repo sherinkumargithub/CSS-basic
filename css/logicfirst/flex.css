@@ -1,0 +1,52 @@
+.ocont {
+  background-color: rgb(235, 150, 192);
+  min-height: 400px;
+  display: flex;
+  /* flex-wrap: wrap;  --4 */
+  justify-content: center; /*space-around; */ /*space-between; center; --2 */
+  align-items: center;
+}
+.box {
+  width: 130px;
+  height: 130px;
+  background-color: lightgreen;
+  border: 2px solid olive;
+}
+.b1 {
+  flex-shrink: 1;
+}
+.b2 {
+  flex-grow: 2;
+  flex-basis: 0;
+  flex-shrink: 2;
+  /* we can declare these above functions in one called--- flex : 1 2 0 px; order is grow,shrink,basis */
+}
+.b3 {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.b4 {
+  /* flex: 1; --3 */
+}
+.cont {
+  display: flex;
+  /* flex-direction: column; */
+}
+p {
+  padding: 10px;
+}
+.p1 {
+  background-color: aquamarine;
+  flex: 2;
+  order: 2;
+}
+.p2 {
+  background-color: rgb(226, 124, 56);
+  flex: 1;
+  order: 1;
+}
+.p3 {
+  background-color: darkkhaki;
+  flex: 1;
+  order: 3;
+}

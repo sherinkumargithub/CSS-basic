@@ -1,0 +1,19 @@
+body {
+  padding: 10%;
+  font-size: 1.3rem;
+}
+ol {
+  list-style-type: upper-latin;
+}
+ul {
+  text-align: center;
+  list-style-position: inside;
+}
+ul li:nth-child(2) {
+  color: red;
+  font-style: italic;
+}
+ol li::marker {
+  color: rgb(142, 212, 36);
+  content: "Do---";
+}

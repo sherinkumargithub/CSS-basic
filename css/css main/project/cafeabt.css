@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital@1&family=Salsa&display=swap");
+
+/* font-family: 'Raleway', sans-serif;
+font-family: 'Salsa', cursive; */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* body {
+  width: 100vw;
+  height: 100vh;
+} */
+.about {
+  background-color: rgb(92, 42, 10);
+  display: grid;
+  grid-template-columns: 30% 70%;
+  align-items: center;
+  text-align: center;
+  column-gap: 3rem;
+
+  width: 100vw;
+  height: auto;
+}
+.about-img img {
+  height: auto;
+  max-height: 500px;
+  border-radius: 11px;
+}
+.about-us {
+  width: 60vw;
+  height: auto;
+  /* border: 2px solid black; */
+
+  /* container-type: inline-size; */
+}
+.about-us h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  font-family: "Salsa", cursive;
+  margin-bottom: 3rem;
+  color: white;
+}
+.about-us p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  letter-spacing: 1.5px;
+  font-family: "Raleway", sans-serif;
+  padding: 2rem;
+  color: rgb(0, 0, 0);
+}

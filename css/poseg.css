@@ -1,0 +1,56 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-size: 1.5rem;
+}
+section {
+  height: 100vh;
+}
+.blue {
+  background-color: blue;
+}
+.red {
+  background-color: red;
+}
+.green {
+  background-color: green;
+}
+header,
+footer {
+  color: whitesmoke;
+  text-align: center;
+  height: 80px;
+  padding: 1rem;
+}
+header {
+  position: sticky;
+  top: 0;
+  font-size: 4rem;
+}
+footer {
+  position: sticky;
+  bottom: 0;
+  font-size: 2rem;
+  background-color: black;
+}
+a {
+  color: blanchedalmond;
+}
+.dhuduu {
+  background-color: aquamarine;
+  font-size: inherit;
+  color: blue;
+  position: fixed;
+  top: 30%;
+  left: 0;
+}
+.dhuduu1 {
+  background-color: aquamarine;
+  font-size: inherit;
+  color: blue;
+  position: fixed;
+  top: 40%;
+  left: 0;
+  z-index: 1;
+}

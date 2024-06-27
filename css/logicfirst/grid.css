@@ -1,0 +1,98 @@
+body {
+  background-color: burlywood;
+}
+.cont {
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr;  --2*/
+  /* grid-template-columns: repeat(5, 1fr);   --3*/
+  /* grid-template-columns: minmax(300px, 1fr) 1fr 2fr;  --4*/
+
+  /* column-gap: 15px;
+  row-gap: 15px;  --1*/
+
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+
+  grid-template-rows: 1fr 1fr 2fr;
+}
+.para {
+  padding: 1rem;
+  background-color: beige;
+}
+
+.ocont {
+  margin: 20px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+
+  grid-template-rows: 2fr 1fr;
+  grid-auto-rows: 300px;
+
+  /* grid-auto-flow: column;  --5*/
+
+  /* align-items: start; --8 */
+  /*justify-content: center;  --7 here default is stretch */
+  /* justify-items: start; ---9*/
+}
+.box {
+  background-color: brown;
+  color: antiquewhite;
+  font-size: 4rem;
+
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.b1 {
+  grid-column: span 4; /*1/5; */
+}
+.b2 {
+  grid-row: span 2;
+}
+.b3 {
+  /* justify-self: end; --6*/
+}
+/* 
+
+
+******************* */
+
+.layout {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+
+  grid-template-rows: 10vh 80vh 10vh;
+  grid-template-areas:
+    "h h h h h"
+    "s1 m m m s2"
+    "f f f f f";
+}
+.head {
+  grid-area: h;
+}
+.side1 {
+  grid-area: s1;
+}
+.main {
+  grid-area: m;
+}
+.side2 {
+  grid-area: s2;
+}
+.foot {
+  grid-area: f;
+}
+
+.layout div {
+  border: 1px solid black;
+  background-color: darkgrey;
+  font-size: 2rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}

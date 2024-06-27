@@ -1,0 +1,20 @@
+/* LINK STYLING -while styling the link,the browser gives its own
+default style */
+body {
+  padding: 10%;
+  font-size: 1.2rem;
+}
+a {
+  text-decoration: underline;
+  cursor: -webkit-grabbing;
+  color: rgb(8, 26, 85);
+}
+/* a:visited {
+  color: rgb(155, 9, 9);
+} */
+a:active {
+  color: red;
+}
+a:hover {
+  color: rgba(16, 171, 243, 0.8);
+}

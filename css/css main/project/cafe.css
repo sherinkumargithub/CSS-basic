@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100&family=Lobster&family=Outfit:wght@200&family=Salsa&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* font-family: var(--BANNER--FONT); */
+}
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  /* COLORS */
+  --BANNER--COLOR: #be5f1f;
+  --TEXT--COLOR: #f6f1ee;
+  --VINTAGE--COLOR: #4f4a45;
+  --BRWN--COLOR: #363433;
+
+  /* FONT STYLE */
+  --BANNER--FONT: "Lobster", sans-serif;
+  --TEXT--FONT: "Outfit", sans-serif;
+  --TEXT: "Salsa", cursive;
+}
+/* body {
+  height: 720px;
+  background: url("coffee-cup.jpg");
+  background-size: cover;
+} */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.3rem 4rem;
+  background: transparent;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  z-index: 1;
+}
+.logo a {
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  font-family: var(--TEXT);
+}
+
+.header__nav a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  font-family: var(--TEXT--FONT);
+  margin-left: 2.5rem;
+
+  position: relative;
+}
+
+/* .header__nav a:hover {
+  border-bottom: 2px solid white;
+} */
+
+.header__nav a::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: rgb(255, 255, 255);
+
+  transition: 0.3s;
+}
+.header__nav a:hover:before {
+  width: 100%;
+}
+
+/* slogan */
+.slogan {
+  padding: 3rem;
+  font-size: 4rem;
+  margin-top: 10rem;
+  margin-left: 6rem;
+  font-weight: 800;
+  color: rgb(0, 0, 0);
+
+  border: 1px solid rgb(199, 191, 191);
+  border-radius: 12px;
+  max-width: 40%;
+  background-color: rgba(246, 174, 57, 0.2);
+}
+.background {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.slogan {
+  position: absolute;
+  top: 0;
+}
+/* menu */
+
+/* .menucoff {
+  display: flex;
+  /* flex-direction: row; */
+/* 
+  background-color: var(--BANNER--COLOR);
+  margin-top: 30px;
+  padding: 1.3rem;
+}
+.menu1 {
+  flex: 1;
+}
+.menu2 {
+  flex: 1;
+}
+.menu3 {
+  flex: 1;
+} */
+.menucoff {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  background-color: rgb(92, 42, 10); /*var(--BANNER--COLOR); */
+  margin-top: 0;
+
+  border-bottom: 2px solid black;
+}
+
+.menuu {
+  display: grid;
+  place-content: center;
+  padding: 1rem;
+  margin: 3rem;
+
+  background-color: rgb(219, 161, 85); /*rgba(184, 154, 105, 0.2); */
+  border: 1px solid black;
+  border-radius: 25px;
+}
+.menuu h2 {
+  margin-bottom: 1rem;
+  color: rgb(126, 83, 15);
+}
+
+.txt {
+  font-size: 1.5rem;
+  font-weight: 300;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background-color: rgb(92, 42, 10); /* var(--BANNER--COLOR); */
+  margin-top: 40px;
+  padding: 1rem;
+  padding-top: 20px;
+  border-top: 2px solid black;
+  color: rgb(223, 171, 103);
+
+  font-family: "Outfit", sans-serif;
+}
+footer {
+  position: sticky;
+  background-color: var(--BRWN--COLOR);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 10px;
+}
+footer {
+  bottom: 0;
+}

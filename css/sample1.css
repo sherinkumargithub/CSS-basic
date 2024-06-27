@@ -1,0 +1,24 @@
+body {
+  font-size: 25px;
+  border: 5px solid olive;
+}
+p {
+  color: rgb(112, 128, 144);
+}
+.gray {
+  color: #ff69b4;
+  font-style: italic;
+}
+#green {
+  color: #adff2f;
+}
+h1,
+h2 {
+  color: rgb(3, 27, 25);
+}
+p span {
+  background-color: rgb(216, 111, 51);
+}
+.highlight {
+  background-color: orangered;
+}

@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* variables */
+:root {
+  --FF: Arial, Helvetica, sans-serif;
+  /* --FS: max(1.5rem, 3vh);
+  --FS: clamp(2rem, 2vh, 1.5rem); */
+  --FS: clamp(1.5rem, 4vh, 3rem);
+  --FS--SM: clamp(0.75rem, 2vh, 1.25rem);
+  --FS--XL: 3rem;
+
+  /* color  */
+  --BGCOLOR: #475569;
+  --ALT--BGCOLOR: #1e2938;
+  --RAD-COLOR: whitesmoke;
+  --TXT--COLOR: whitesmoke;
+
+  /* sq */
+  --SQ--BGCOLOR: bisque;
+  --SQ--SIZE: max(150px, 20vw);
+}
+
+/* dArk mode */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --BGCOLOR: #000000;
+    --ALT--BGCOLOR: #494e55;
+    --RAD-COLOR: rgb(231, 177, 227);
+  }
+}
+
+/* general styles */
+body {
+  font-size: var(--FS);
+  font-family: var(--FF);
+  min-height: 100vh;
+  background-color: var(--BGCOLOR);
+  background-image: radial-gradient(var(--RAD-COLOR), var(--BGCOLOR));
+  display: flex;
+  flex-direction: column;
+}
+
+header,
+nav,
+footer {
+  display: grid;
+  place-content: center;
+  grid-template-columns: 100%; /*here this make the block content into 100% to the screen */
+  text-align: center;
+}
+header,
+footer {
+  position: sticky;
+  background-color: var(--ALT--BGCOLOR);
+  color: var(--TXT--COLOR);
+}
+header {
+  top: 0;
+}
+nav {
+  background-color: white;
+  color: #475569;
+  padding: 0.5rem;
+  border-bottom: 2px solid black;
+}
+main {
+  flex-grow: 1;
+  font-size: var(--FS);
+
+  /* padding: 10px 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-flow: row wrap;
+  gap: min(4vw, 15px); */
+}
+footer {
+  bottom: 0;
+}
+
+main aside {
+  background-color: hsla(0, 0%, 20%, 0.8);
+  font-size: var(--FS--SM);
+  color: beige;
+  font-style: italic;
+  padding: 0.5rem;
+}
+
+@media screen and (min-width: 576px) {
+  main {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
+  main section {
+    width: calc(70% - 5px);
+  }
+
+  main aside {
+    width: calc(30% - 5px);
+  }
+}
+
+/* link */
+a:any-link {
+  color: rgb(204, 173, 173);
+}
+a:hover,
+a:visited {
+  filter: brightness(200%);
+  /* filter: hue-rotate(180degree); */
+}
+
+/* image while hover */
+
+.tooltip {
+  border-bottom: 2px dashed white;
+  position: relative;
+}
+.tooltip:hover::before {
+  position: absolute;
+  top: -30px;
+  content: attr(data-tooltip);
+  background-color: var(--ALT--BGCOLOR);
+}

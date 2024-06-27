@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.grid-items {
+  padding: 50px;
+  color: blanchedalmond;
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.one {
+  background-color: brown;
+}
+.two {
+  background-color: rgb(168, 168, 31);
+}
+.three {
+  background-color: rgb(250, 50, 0);
+  /* advance */
+  /* grid-area: wide; */
+}
+.four {
+  background-color: rgb(92, 88, 88);
+  /* grid-area: noball; */
+}
+.five {
+  background-color: blue;
+}
+.six {
+  background-color: rgb(95, 21, 144);
+}
+.seven {
+  background-color: rgb(51, 136, 2);
+}
+
+.grid-container {
+  display: grid;
+  /* there is no default in grid we have to mention the column or row like grid-template-column /row. ---1*/
+
+  /* grid-template-columns: 200px 170px 300px; */
+  /* grid-template-rows: 200px 300px; */
+
+  /* to make it more flexible and to avoid extra spaces we use the unit "fr"  fractional unit, it use 100% space ----2*/
+
+  /* grid-template-columns: 1fr 2fr; */
+  /* grid-template-columns: 25% 75%;
+  percentage may cause overflow while in gap ---3 */
+
+  /* /* repeat ---4 */
+  grid-template-columns: repeat(3, 200px);
+  grid-template-rows: repeat(2, 200px);
+  /* 1fr */
+  /* you know that grid doesnt mention any row or coulumn , to make this default we use  gris-auto-column/row --- this will assign when grid-template not mentioned on time ----5*/
+  /* grid-auto-rows: minmax(150px, auto);
+  grid-auto-columns: 150px; */
+
+  /* here comes the min-max width and height .-- always min value will work*/
+
+  /* gap */
+  /* grid-column-gap: 10px;
+  grid-row-gap: 10px; */
+  grid-gap: 10px;
+
+  /* advance topics 
+  --its work like a blueprint for the grid area  ---6*/
+  /* grid-template-areas:
+    ". . wide wide"
+    ". . wide wide"
+    "noball noball . ."; */
+
+  /* to make the overall content center ---9*/
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+
+  /* to make each item movement(remove padding)  ---10 */
+  justify-items: center;
+  align-items: center;
+}
+
+/* for the use of blueprits we have some properties ---7*/
+.three {
+  /* grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3; */
+  /*   
+  grid-column: 3/5;
+  grid-row: 1/3; */
+  /* here we calculkate the start/end values of row/col to avoid this calculkation we use "span" keyword ---8*/
+
+  /* grid-column: span 3;
+  grid-row: span 2; */
+
+  /* to make more specific on induvidual item ---11 */
+  /* justify-self: end; */
+  /* align-self: flex-end; */
+}

@@ -1,0 +1,50 @@
+/*h1 {
+  font-size: 2rem;
+  border: 3px dashed rgb(73, 12, 12);
+  width: 50%;
+  color: rgb(158, 126, 39);
+  padding: 0.5em;
+   it provides full control of page
+}
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  border: 6px double plum;
+  /* 2---
+  border-top-width: 10px;
+  border-top-color: dashed salmon;
+  border-right: 5px solid goldenrod;
+  */
+  font-size: 1.5rem;
+
+  /* 1---
+  margin-top: 1em;
+  margin-bottom: 2em;
+  margin-right: 3em;
+  margin-left: 4em;*/
+
+  /*it choose top,right and bottom,left but both are same.and it also use for all elements*/
+
+  /* 3--
+  margin: 1em 2em 3em 4em;
+  padding: 1em 2em 3em 4em;*/
+  margin: 1.5em;
+  padding: 1.5em;
+  /* 4---
+  outline: 3px solid rgb(18, 3, 32);
+  outline-offset: 6px;*/
+}
+.circle {
+  margin: auto;
+  border: 10px solid red;
+  border-radius: 50%;
+  background-color: rgb(212, 124, 142);
+  width: 100px;
+  height: 100px;
+  outline: 4px dashed black;
+  outline-offset: 6px;
+}

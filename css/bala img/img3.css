@@ -1,0 +1,16 @@
+body {
+  min-height: 100vh;
+  background-color: aliceblue;
+
+  background-image: url(/picture/img/pngegg.png),
+    linear-gradient(to left, steelblue, white);
+
+  background-repeat: repeat-y, no-repeat;
+  background-position: right;
+  background-size: 20%, auto;
+
+  /*   or for the above practice
+   background: repeat-y right url("/picture/img/pngegg.png"),
+    no-repeat linear-gradient(to left, steelblue, white);
+*/
+}

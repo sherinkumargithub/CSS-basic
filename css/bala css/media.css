@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 1.5rem;
+  min-height: 100vh;
+  background-color: #475569;
+  background-image: radial-gradient(whitesmoke, #475569);
+  display: flex;
+  flex-direction: column;
+}
+
+header,
+nav,
+main,
+footer {
+  display: grid;
+  place-content: center;
+
+  grid-template-columns: 100%; /*here this make the block content into 100% to the screen */
+  text-align: center;
+}
+header,
+footer {
+  position: sticky;
+  background-color: #1e2938;
+  color: whitesmoke;
+}
+header {
+  top: 0;
+}
+nav {
+  background-color: white;
+  color: #475569;
+  padding: 0.5rem;
+  border-bottom: 2px solid black;
+}
+main {
+  flex-grow: 1;
+}
+footer {
+  bottom: 0;
+}
+
+/* small */
+@media screen and (min-width: 640px) {
+  body {
+    background-color: green;
+    background-image: radial-gradient(white, green);
+  }
+
+  nav {
+    display: none;
+  }
+}
+/* medium */
+@media screen and (min-width: 768px) {
+  body {
+    background-color: red;
+    background-image: radial-gradient(white, red);
+  }
+}
+/* large */
+@media screen and (min-width: 1024px) {
+  body {
+    background-color: yellow;
+    background-image: radial-gradient(white, yellow);
+  }
+}
+/* orientation -- mobile screen landscape */
+@media screen and (max-height: 425px) and (min-aspect-ratio: 7/4) {
+  body {
+    background-color: rgb(172, 131, 55);
+    background-image: radial-gradient(white, rgb(230, 178, 82));
+  }
+}

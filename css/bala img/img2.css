@@ -1,0 +1,57 @@
+/*Beign Reset  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.cont {
+  background-color: blanchedalmond;
+  background-image: url("/picture/img/pngegg.png");
+
+  background-repeat: repeat;
+  background-size: cover;
+  background-position: center;
+}
+img {
+  display: block;
+}
+/* End Reset */
+/* Utility classes */
+.nowrap {
+  white-space: no-wrap;
+}
+.offscreen {
+  position: absolute;
+  left: -10000px;
+}
+/* End Utility classes */
+.hero {
+  border-bottom: 3px solid rgb(255, 255, 255);
+  padding: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+
+  background-color: hsla(0, 0%, 0%, 0.452);
+}
+.h1 {
+  font-size: 400%;
+  text-shadow: 2px 2px 5px rgb(19, 17, 17);
+
+  padding: 2rem;
+  border-radius: 15px;
+}
+
+.profile {
+  width: 35%;
+  height: auto;
+}
+.profile img {
+  width: 100%;
+  height: auto;
+  min-height: 100px;
+  border: 5px double tan;
+  border-radius: 50%;
+}
